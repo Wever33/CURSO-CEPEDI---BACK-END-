@@ -12,7 +12,7 @@ for numero_da_pergunta, pergunta in enumerate(lista_de_perguntas):
 respostas_positivas = lista_de_resposta.count("sim")
 
 if respostas_positivas == 2:
-    print("\nStatus: Inocente, porém Suspeito(a!")
+    print("\nStatus: Inocente, porém Suspeito(a)!")
 
 elif respostas_positivas == 3 or respostas_positivas == 4:
     print("\nStatus: Cúmplice!")
