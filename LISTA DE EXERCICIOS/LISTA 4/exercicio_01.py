@@ -3,7 +3,7 @@ lista_impares = []
 lista_numeros = []
 numeros = 0
 
-for i in range(20):
+for i in range(2):
 
     numeros = int(input("Digite números aqui: "))
     lista_numeros.append(numeros)
