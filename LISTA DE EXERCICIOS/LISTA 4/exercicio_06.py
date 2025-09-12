@@ -23,7 +23,7 @@ for matricula in lista_de_matriculas:
 
     for indice, reposta_gabarito in enumerate(gabarito):
 
-        reposta = input("Reposta: ")
+        reposta = input("Reposta: ").lower()
 
         if reposta == reposta_gabarito:
         
@@ -44,12 +44,16 @@ for matricula in lista_de_matriculas:
 
     mensagem_aluno += f"""
 
-    MATRÍCULA: {matricula}
-    TOTAL DE ACERTOS: {respostas_certas}/{NUMERO_DE_QUESTOES}
-    NOTA: {nota:.0f}
-    SITUAÇÃO: {situacao_aluno}
-
+     ___________________________________________________________
+    |                       BOLETIM ALUNO                       |             
+    | ----------------------------------------------------------|
+     MATRÍCULA: {matricula}                                    
+     TOTAL DE ACERTOS: {respostas_certas}/{NUMERO_DE_QUESTOES} 
+     NOTA: {nota:.0f}                                          
+     SITUAÇÃO: {situacao_aluno}                                
+    -------------------------------------------------------------
+    
     """
 
 print(mensagem_aluno)
-print(f"Porcentagem aprovados: {(contador_aprovados*100) / len(lista_de_matriculas):.0f} %")
+print(f"PORCENTAGEM APROVAÇÃO: {(contador_aprovados*100) / len(lista_de_matriculas):.0f} %\n")
